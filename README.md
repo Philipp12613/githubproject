@@ -1,2 +1,0 @@
-# githubproject
-Projektarbeit -Las Vegas
