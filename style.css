@@ -78,3 +78,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a {
+  color: #FFD700; /* goldgelb */
+  text-decoration: none; /* optional, falls du keine Unterstreichung willst */
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline; /* für bessere Zugänglichkeit */
+}
