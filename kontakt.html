@@ -4,8 +4,98 @@
   <meta charset="UTF-8">
   <title>Kontakt</title>
   <link rel="stylesheet" href="style.css">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ffffff;
+    }
+
+    a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3a3a3a;
+      color: #fff;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #d4af37;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #b89b30;
+    }
+  </style>
 </head>
 <body>
+  <h1>Kontakt</h1>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:kontakt@example.com">kontakt@example.com</a></p>
+    <p><strong>Telefon:</strong> <a href="tel:+49123456789">+49 123 456789</a></p>
+    <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt, Deutschland</p>
+  </div>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Nachricht:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Absenden">
+  </form>
+</body>
   <header>
     <h1>Kontaktieren Sie uns</h1>
   </header>
