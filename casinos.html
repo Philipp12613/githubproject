@@ -1,64 +1,35 @@
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html> <!-- Dokumenttypdefinition -->
+<html lang="de"> <!-- Sprache: Deutsch -->
 <head>
-  <meta charset="UTF-8">
-  <title>Casinos</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .casino-section {
-      margin-top: 50px;
-      text-align: center;
-    }
-    .casino-section img {
-  width: 100%;
-  max-width: 600px;     /* Optionale Begrenzung */
-  height: 300px;         /* Einheitliche Höhe */
-  object-fit: cover;     /* Bild wird beschnitten, nicht verzerrt */
-  border: 2px solid #ffcc00;
-  border-radius: 10px;
-    }
-    .back-to-top {
-      display: block;
-      text-align: center;
-      margin: 50px 0;
-    }
-    .back-to-top a {
-      color: #ffcc00;
-      font-weight: bold;
-      text-decoration: none;
-      border: 2px solid #ffcc00;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-    .back-to-top a:hover {
-      background-color: #ffcc00;
-      color: #1a1a1a;
-    }
-  </style>
+  <meta charset="UTF-8"> <!-- Zeichencodierung -->
+  <title>Casinos</title> <!-- Seitentitel -->
+  <link rel="stylesheet" href="style.css"> <!-- CSS einbinden -->
 </head>
 <body>
-  <header id="top">
-    <h1>Casinos in Las Vegas</h1>
+  <header id="top"> <!-- Kopfbereich -->
+    <h1>Casinos in Las Vegas</h1> <!-- Hauptüberschrift -->
   </header>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="sehenswürdigkeiten.html">Sehenswürdigkeiten</a>
-    <a href="casinos.html">Casinos</a>
-    <a href="hotels.html">Hotels</a>
-    <a href="geschichte.html">Geschichte</a>
-    <a href="kontakt.html">Kontakt</a>
+  
+  <nav> <!-- Navigationsleiste -->
+    <a href="index.html">Start</a> <!-- Link Startseite -->
+    <a href="sehenswürdigkeiten.html">Sehenswürdigkeiten</a> <!-- Link Sehenswürdigkeiten -->
+    <a href="casinos.html">Casinos</a> <!-- Link Casinos -->
+    <a href="hotels.html">Hotels</a> <!-- Link Hotels -->
+    <a href="geschichte.html">Geschichte</a> <!-- Link Geschichte -->
+    <a href="kontakt.html">Kontakt</a> <!-- Link Kontakt -->
   </nav>
-  <main>
-    <div class="box">
-      <h2>Casino Übersicht</h2>
-      <table>
+
+  <main> <!-- Hauptbereich -->
+    <div class="box"> <!-- Inhalt-Container -->
+      <h2>Casino Übersicht</h2> <!-- Abschnittsüberschrift -->
+      <table> <!-- Tabelle Casinos -->
         <tr>
-          <th>Name</th>
-          <th>Lage</th>
-          <th>Besonderheiten</th>
+          <th>Name</th> <!-- Spalte Name -->
+          <th>Lage</th> <!-- Spalte Lage -->
+          <th>Besonderheiten</th> <!-- Spalte Besonderheiten -->
         </tr>
         <tr>
-          <td><a href="#bellagio">Bellagio</a></td>
+          <td><a href="#bellagio">Bellagio</a></td> <!-- Link zu Abschnitt -->
           <td>Las Vegas Strip</td>
           <td>Wasserspiele, Pokerraum</td>
         </tr>
@@ -75,50 +46,49 @@
         <tr>
           <td><a href="#mgm">MGM Grand</a></td>
           <td>Südlicher Teil des Strips</td>
-          <td>Eines der größten Hotels der Welt mit umfangreichem Casino, Shows und Restaurants</td>
+          <td>Größtes Hotel, Shows</td>
         </tr>
         <tr>
           <td><a href="#wynn">Wynn Las Vegas</a></td>
           <td>Nördlicher Teil des Strips</td>
-          <td>Elegantes Design, hochwertige Restaurants und ein exklusives Spielerlebnis</td>
+          <td>Luxus, exklusive Atmosphäre</td>
         </tr>
       </table>
     </div>
 
-    <! Casino Bilder>
-    <div class="casino-section" id="bellagio">
+    <!-- Casino Bilder -->
+    <div class="casino-section" id="bellagio"> <!-- Abschnitt Bellagio -->
       <h2>Bellagio</h2>
-      <img src="bilder/bellagio.jpg" alt="Bellagio Casino">
+      <img src="bilder/bellagio.jpg" alt="Bellagio Casino"> <!-- Bild Bellagio -->
     </div>
 
-    <div class="casino-section" id="caesars">
+    <div class="casino-section" id="caesars"> <!-- Abschnitt Caesars -->
       <h2>Caesars Palace</h2>
-      <img src="bilder/caesarspalace.jpg" alt="Caesars Palace Casino">
+      <img src="bilder/caesarspalace.jpg" alt="Caesars Palace Casino"> <!-- Bild Caesars -->
     </div>
 
-    <div class="casino-section" id="venetian">
+    <div class="casino-section" id="venetian"> <!-- Abschnitt Venetian -->
       <h2>The Venetian</h2>
-      <img src="bilder/thevenetian.jpg" alt="The Venetian Casino">
+      <img src="bilder/thevenetian.jpg" alt="The Venetian Casino"> <!-- Bild Venetian -->
     </div>
 
-    <div class="casino-section" id="mgm">
+    <div class="casino-section" id="mgm"> <!-- Abschnitt MGM -->
       <h2>MGM Grand</h2>
-      <img src="bilder/mgm.jpg" alt="MGM Grand Casino">
+      <img src="bilder/mgm.jpg" alt="MGM Grand Casino"> <!-- Bild MGM -->
     </div>
 
-    <div class="casino-section" id="wynn">
+    <div class="casino-section" id="wynn"> <!-- Abschnitt Wynn -->
       <h2>Wynn Las Vegas</h2>
-      <img src="bilder/wynn.jpg" alt="Wynn Las Vegas Casino">
+      <img src="bilder/wynn.jpg" alt="Wynn Las Vegas Casino"> <!-- Bild Wynn -->
     </div>
 
-    <!-- Nach oben Button -->
-    <div class="back-to-top">
-      <a href="#top">Nach oben</a>
+    <div class="back-to-top"> <!-- Zurück nach oben -->
+      <a href="#top">Nach oben</a> <!-- Top-Link -->
     </div>
-
   </main>
-  <footer>
-    &copy; 2025 Las Vegas Schulprojekt von Valerian, Philipp und Linus
+
+  <footer> <!-- Fußzeile -->
+    &copy; 2025 Las Vegas Schulprojekt von Valerian, Philipp und Linus <!-- Copyright -->
   </footer>
 </body>
 </html>
