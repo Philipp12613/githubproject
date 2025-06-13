@@ -1,113 +1,228 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1a1a1a;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Schriftart */
+  background-color: #1c1c1c;      /* Hintergrund dunkel */
+  color: #f5f5f5;                 /* Textfarbe hell */
+  margin: 0;                      /* Kein Außenabstand */
+  padding: 40px;                  /* Innenabstand */
 }
 
-header, footer {
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
+h1 {
+  color: #ffffff;                 /* Überschrift weiß */
+}
+
+header,
+footer {
+  background-color: #000;         /* Schwarz */
+  padding: 20px;                  /* Innenabstand */
+  text-align: center;             /* Zentrierter Text */
 }
 
 nav {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background-color: #333;         /* Dunkelgrau */
+  display: flex;                  /* Flexbox-Navigation */
+  justify-content: center;        /* Zentriert */
+  flex-wrap: wrap;                /* Umbruch bei Bedarf */
 }
 
 nav a {
-  color: #ffcc00;
-  margin: 10px 15px;
-  text-decoration: none;
-  font-weight: bold;
+  color: #ffcc00;                 /* Gelber Link */
+  margin: 10px 15px;              /* Abstand zwischen Links */
+  text-decoration: none;          /* Keine Unterstreichung */
+  font-weight: bold;              /* Fettschrift */
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline;     /* Unterstrichen beim Hover */
 }
 
 main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #2c2c2c;
-  border-radius: 10px;
+  max-width: 1200px;              /* Maximale Breite */
+  margin: 20px auto;              /* Zentrierung + Abstand */
+  padding: 20px;                  /* Innenabstand */
+  background-color: #2c2c2c;      /* Mittelgrau */
+  border-radius: 10px;            /* Abgerundete Ecken */
 }
 
-.box {
-  border: 2px solid #ffcc00;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-ul, ol {
-  padding-left: 20px;
-  line-height: 1.6;
+ul,
+ol {
+  padding-left: 20px;             /* Einzug */
+  line-height: 1.6;               /* Zeilenabstand */
 }
 
 a {
-  color: #ffcc00;
-  text-decoration: none;
+  color: #d4af37;                 /* Goldfarbe */
+  text-decoration: none;          /* Keine Unterstreichung */
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline;     /* Hover-Effekt */
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  width: 100%;                    /* Volle Breite */
+  border-collapse: collapse;      /* Keine doppelten Ränder */
+  margin-top: 20px;               /* Abstand oben */
 }
 
-table, th, td {
-  border: 1px solid #ffcc00;
+table,
+th,
+td {
+  border: 1px solid #ffcc00;      /* Gelbe Umrandung */
 }
 
-th, td {
-  padding: 10px;
-  text-align: left;
+th,
+td {
+  padding: 10px;                  /* Zellen-Innenabstand */
+  text-align: left;               /* Linksbündig */
 }
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: column;       /* Mobil: vertikale Navigation */
   }
 }
 
 /* Zeitleiste */
 .timeline {
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.7;
+  list-style: none;               /* Keine Aufzählungszeichen */
+  padding-left: 0;                /* Kein Einzug */
+  line-height: 1.7;               /* Zeilenabstand */
 }
 
 .timeline li {
-  margin-bottom: 10px;
-  border-left: 3px solid #ffcc00;
-  padding-left: 10px;
+  margin-bottom: 10px;            /* Abstand nach unten */
+  border-left: 3px solid #ffcc00; /* Linker Streifen */
+  padding-left: 10px;             /* Abstand zum Text */
 }
 
-/* Funfact-Box */
-.funfact-box {
-  background-color: #333;
-  border-left: 5px solid #ffcc00;
-  padding: 15px;
-  border-radius: 8px;
-  font-style: italic;
-  margin-top: 20px;
+/* Funfact-Box + Zitatbox */
+.funfact-box,
+.quote-box {
+  background-color: #333;         /* Dunkelgrau */
+  border-left: 5px solid #ffcc00; /* Linke Linie gelb */
+  padding: 15px;                  /* Innenabstand */
+  border-radius: 8px;             /* Abgerundete Ecken */
+  font-style: italic;             /* Kursiv */
+  margin: 20px 0;                 /* Abstand oben/unten */
 }
 
 /* Bild */
-.history-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.history-image,
+.intro-image {
+  width: 100%;                    /* Volle Breite */
+  max-height: 300px;              /* Max. Höhe */
+  object-fit: cover;              /* Zuschneiden */
+  border-radius: 10px;            /* Abgerundet */
+  border: 2px solid #ffcc00;      /* Gelber Rahmen */
+  margin-bottom: 20px;            /* Abstand unten */
+}
+
+.highlight {
+  color: #ffcc00;                 /* Gelber Text */
+  font-weight: bold;             /* Fettschrift */
+}
+
+.cta-button {
+  display: inline-block;          /* Inline-Block */
+  margin-top: 20px;               /* Abstand oben */
+  padding: 10px 20px;             /* Innenabstand */
+  background-color: #ffcc00;      /* Gelber Hintergrund */
+  color: #1a1a1a;                 /* Dunkle Schrift */
+  font-weight: bold;              /* Fett */
+  text-decoration: none;          /* Keine Linie */
+  border-radius: 8px;             /* Abgerundet */
+}
+
+.cta-button:hover {
+  background-color: #e6b800;      /* Etwas dunkler beim Hover */
+}
+
+.contact-info {
+  margin-bottom: 30px;            /* Abstand unten */
+}
+
+form {
+  background-color: #2c2c2c;      /* Grau */
+  padding: 20px;                  /* Innenabstand */
+  border-radius: 10px;            /* Abgerundet */
+  max-width: 500px;               /* Max. Breite */
+}
+
+label {
+  display: block;                 /* Blockanzeige */
+  margin-top: 15px;               /* Abstand oben */
+  font-weight: bold;              /* Fett */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;                    /* Volle Breite */
+  padding: 10px;                  /* Innenabstand */
+  margin-top: 5px;                /* Abstand oben */
+  border: none;                   /* Kein Rahmen */
+  border-radius: 5px;             /* Abgerundet */
+  background-color: #3a3a3a;      /* Hintergrund grau */
+  color: #fff;                    /* Textfarbe weiß */
+}
+
+textarea {
+  height: 120px;                  /* Feste Höhe */
+}
+
+input[type="submit"] {
+  margin-top: 20px;               /* Abstand oben */
+  padding: 10px 20px;             /* Innenabstand */
+  background-color: #d4af37;      /* Goldfarbe */
+  color: #000;                    /* Schwarze Schrift */
+  border: none;                   /* Kein Rahmen */
+  border-radius: 5px;             /* Abgerundet */
+  cursor: pointer;                /* Hand-Cursor */
+}
+
+input[type="submit"]:hover {
+  background-color: #b89b30;      /* Etwas dunkler */
+}
+
+.casino-section {
+  margin-top: 50px;               /* Abstand oben */
+  text-align: center;             /* Zentrierter Inhalt */
+}
+
+.casino-section img {
+  width: 100%;                    /* Volle Breite */
+  max-width: 600px;               /* Begrenzung */
+  height: 300px;                  /* Feste Höhe */
+  object-fit: cover;              /* Zuschneiden */
+  border: 2px solid #ffcc00;      /* Gelber Rahmen */
+  border-radius: 10px;            /* Abgerundet */
+}
+
+.back-to-top {
+  display: block;                 /* Blockanzeige */
+  text-align: center;             /* Zentriert */
+  margin: 50px 0;                 /* Abstand oben/unten */
+}
+
+.back-to-top a {
+  color: #ffcc00;                 /* Gelber Text */
+  font-weight: bold;             /* Fett */
+  text-decoration: none;         /* Keine Linie */
+  border: 2px solid #ffcc00;      /* Gelber Rahmen */
+  padding: 10px 20px;             /* Innenabstand */
+  border-radius: 5px;             /* Abgerundet */
+}
+
+.back-to-top a:hover {
+  background-color: #ffcc00;      /* Gelb gefüllt */
+  color: #1a1a1a;                 /* Schwarze Schrift */
+}
+
+.box {
+  border: 2px solid #ffcc00;      /* Gelber Rahmen */
+  padding: 30px 25px;             /* Innenabstand */
+  margin: 20px 0;                 /* Abstand oben/unten */
+  border-radius: 10px;            /* Abgerundet */
+  line-height: 1.8;               /* Lesbarer Abstand */
+  /* min-height entfernt, damit sich die Höhe dem Inhalt anpasst */
 }
